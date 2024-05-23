@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-used-by-upload-mbs",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.36.1.2001.1005.21",
+        "concept": [
+          {
+            "code": "11709",
+            "display": "Australian MBS Code"
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.36.1.2001.1001.101",
+        "concept": [
+          {
+            "code": "100.16644",
+            "display": "Medicare/DVA Funded Services"
+          }
+        ]
+      }
+    ]
+  }
+}

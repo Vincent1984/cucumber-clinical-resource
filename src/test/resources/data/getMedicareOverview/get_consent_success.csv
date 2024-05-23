@@ -1,0 +1,2 @@
+body,ihiNumber,documentId,documentTypeCode,fhirResourceStatus,confidentialityCode,serviceStopTime,resourceId
+CONSENT_template.json,8003608333411015,miss:pbs:2.25.157598728300360404652072519241668369197,100.16671,ACTIVE,GENERAL,2009-04-20,0a631bd0-a3e9-4965-8fd2-df0270ede003

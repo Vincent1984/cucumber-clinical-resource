@@ -1,0 +1,271 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "1999900000999",
+  "extension": [
+    {
+      "url": "http://hl7.org.au/fhir/StructureDefinition/repository-id",
+      "valueIdentifier":
+        {
+          "system": "http://ns.electronichealth.net.au/id/pcehr/pair/1.0",
+          "value": "8003640002000043"
+        }
+    },
+    {
+      "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/removal-reason",
+      "valueString": "Administrative Action: Untrusted Source"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "p90e98bd-9a90-41c1-afe6-d42787d1188d",
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NOI",
+                "display": "National Organization Identifier"
+              }
+            ],
+            "text": "HPI-O"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+          "value": "8003627500000328"
+        }
+      ]
+    },
+    {
+      "resourceType": "Practitioner",
+      "id": "6dcd1495-1c52-4801-9b05-fb3643410dc4",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/practitioner-classification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.13.62",
+                "code": "253312",
+                "version": "1.0.0.1",
+                "display": "Cardiologist"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/practitioner-organization",
+          "valueReference": {
+            "reference": "#p90e98bd-9a90-41c1-afe6-d42787d1188d"
+          }
+        }
+      ],
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NPI",
+                "display": "National provider identifier"
+              }
+            ],
+            "text": "HPI-I"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+          "value": "8003621566684489"
+        }
+      ],
+      "name": [
+        {
+          "family": "Javad",
+          "given": [
+            "Chris"
+          ],
+          "prefix": [
+            "Dr"
+          ],
+          "suffix": [
+            "Lord"
+          ]
+        }
+      ]
+    },
+    {
+      "resourceType": "Organization",
+      "id": "tb1f165f-529f-4c0b-a673-b056501d6c60",
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NOI",
+                "display": "National Organization Identifier"
+              }
+            ],
+            "text": "HPI-O"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+          "value": "8003621566684455"
+        }
+      ]
+    },
+    {
+      "resourceType": "Practitioner",
+      "id": "db1f165f-529f-4c0b-a673-b056501d6c60",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/practitioner-classification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.13.62",
+                "code": "253312",
+                "version": "1.0.0.1",
+                "display": "Cardiologist"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/practitioner-organization",
+          "valueReference": {
+            "reference": "#tb1f165f-529f-4c0b-a673-b056501d6c60"
+          }
+        }
+      ],
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NPI",
+                "display": "National provider identifier"
+              }
+            ],
+            "text": "HPI-I"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+          "value": "8003621566687777"
+        }
+      ],
+      "name": [
+        {
+          "family": "Markson",
+          "given": [
+            "Graham"
+          ]
+        }
+      ]
+    },
+    {
+      "resourceType": "ReferralRequest",
+      "id": "c90e98bd-9a90-41c1-afe6-d42787d1188d",
+      "status": "active",
+      "intent": "order",
+      "subject": {
+		 "identifier": [
+			 {
+			  "type": {
+				"coding": [
+					{
+					  "system": "http://hl7.org/fhir/v2/0203",
+					  "code": "NI",
+					  "display": "National unique individual identifier"
+					}
+				],
+				"text": "IHI"
+			  },
+			  "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+			  "value": "8003608666761937"
+			}
+		]
+      },
+      "requester": {
+        "agent": {
+          "reference": "#6dcd1495-1c52-4801-9b05-fb3643410dc4"
+        }
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "resource:urn:oid:2.25.157598728300360404652072519241668369195"
+    }
+  ],
+  "subType": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "100.16644^^NCTIS",
+          "display": "Medicare/DVA Funded Services"
+        }
+      ]
+    }
+  ],
+  "patient": {
+	"identifier": [
+		{
+		  "type": {
+			"coding": [
+				{
+				  "system": "http://hl7.org/fhir/v2/0203",
+				  "code": "NI",
+				  "display": "National unique individual identifier"
+				}
+			],
+			"text": "IHI"
+		  },
+		  "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+		  "value": "8003601127488661"
+		}
+	]
+  },
+  "created": "2017-06-06",
+  "provider": {
+    "reference": "#db1f165f-529f-4c0b-a673-b056501d6c60"
+  },
+  "referral": {
+    "reference": "#c90e98bd-9a90-41c1-afe6-d42787d1188d"
+  },
+  "item": [
+    {
+      "sequence": 1,
+      "service": {
+        "coding": [
+          {
+            "system": "http://ns.electronichealth.net.au/fhir/StructureDefinition/eob-item-service",
+            "code": "MBS",
+            "display": "Medicare Benefits Schedule"
+          }
+        ]
+      },
+      "modifier": [
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.36.1.2001.1005.21",
+              "code": "11709",
+              "display": "Australian MBS Code",
+              "version": "1.0.0.0"
+            }
+          ]
+        }
+      ],
+      "servicedDate": "2017-06-06",
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/service-place",
+            "code": "21",
+            "display": "Inpatient Hospital"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-used-by-upload-consent",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.36.1.2001.1001.101",
+        "concept": [
+          {
+            "code": "102.16652",
+            "display": "Australian Organ Donor Register Entry"
+          }
+        ]
+      }
+    ]
+  }
+}

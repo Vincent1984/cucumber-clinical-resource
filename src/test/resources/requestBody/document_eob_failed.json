@@ -1,0 +1,112 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "5264ed3e-8332-437c-bf63-e9fe5ef14f5b",
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "5264ed3e-8332-437c-bf63-e9fe5ef14f5b",
+      "identifier": [
+        {
+          "system": "http://pbs.gov.au/code/manufacturer",
+          "value": "$doc_id"
+        }
+      ],
+      "name": "Pfizer Australia Pty Ltd"
+    },
+    {
+      "resourceType": "Medication",
+      "id": "12687e92-3e2d-4193-9204-af33f00d27eb",
+      "extension": [
+        {
+          "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/medication-generic-name",
+          "valueString": "ATORVASTATIN"
+        },
+        {
+          "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/medication-brand",
+          "valueString": "Terry White Chemists Atorvastatin"
+        },
+        {
+          "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/medication-form-and-strength",
+          "valueString": "Atorvastatin Tablet 40 mg"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://pbs.gov.au/code/item",
+            "code": "08215J",
+            "display": "ATORVASTATIN",
+            "version": "v1.0"
+          }
+        ]
+      },
+      "manufacturer": {
+        "reference": "#5264ed3e-8332-437c-bf63-e9fe5ef14f5b"
+      }
+    },
+    {
+      "resourceType": "MedicationRequest",
+      "id": "a9b74407-9e32-439a-a389-c20ebcc73dbd",
+      "intent": "order",
+      "medicationReference": {
+        "reference": "#12687e92-3e2d-4193-9204-af33f00d27eb"
+      },
+      "subject": {
+        "reference": "Patient/f6993a00-695e-46da-b990-a18734fccf43"
+      },
+      "authoredOn": "2017-06-01",
+      "dispenseRequest": {
+        "numberOfRepeatsAllowed": 1
+      }
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ex-claimtype",
+        "code": "pharmacy",
+        "display": "Pharmacy"
+      }
+    ]
+  },
+  "subType": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "display": "Pharmaceutical Benefit Item",
+          "code": "101.16674"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/f6993a00-695e-46da-b990-a18734fccf43"
+  },
+  "created": "2017-06-06T10:12:32+10:00",
+  "provider": {
+    "reference": "#db1f165f-529f-4c0b-a673-b056501d6c60"
+  },
+  "prescription": {
+    "reference": "#a9b74407-9e32-439a-a389-c20ebcc73dbd"
+  },
+  "item": [
+    {
+      "sequence": 1,
+      "service": {
+        "coding": [
+          {
+            "system": "http://ns.electronichealth.net.au/fhir/StructureDefinition/eob-item-service",
+            "code": "PBS",
+            "display": "Pharmaceutical Benefits Scheme"
+          }
+        ]
+      },
+      "servicedDate": "2017-06-06",
+      "quantity": {
+        "value": 10
+      }
+    }
+  ]
+}

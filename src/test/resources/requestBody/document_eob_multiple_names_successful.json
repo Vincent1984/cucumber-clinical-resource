@@ -1,0 +1,298 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "dd0ac527-b390-4375-8858-8e5d98ca257d",
+  "status": "active",				 
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "p90e98bd-9a90-41c1-afe6-d42787d1188d",
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NOI",
+                "display": "National Organization Identifier"
+              }
+            ],
+            "text": "HPI-O"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+          "value": "8003627500000328"
+        }
+      ],
+      "name": "Positive Health Clinic"
+    },
+    {
+      "resourceType": "Practitioner",
+      "id": "6dcd1495-1c52-4801-9b05-fb3643410dc4",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/practitioner-classification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.13.62",
+                "code": "253312",
+                "display": "General Practitioner"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/practitioner-organization",
+          "valueReference": {
+            "reference": "#p90e98bd-9a90-41c1-afe6-d42787d1188d"
+          }
+        }
+      ],
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NPI",
+                "display": "National provider identifier"
+              }
+            ],
+            "text": "HPI-I"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+          "value": "8003621566684489"
+        }
+      ],
+      "name": [
+        {
+          "family": "Javad",
+          "prefix": [
+            "Dr.",
+            "Mr."
+          ],
+          "given": [
+            "Chris",
+            "Smith"
+          ],
+          "suffix": [
+            "III",
+            "Gn"
+          ]
+        },
+        {
+          "family": "Bryant",
+          "prefix": [
+            "Dr.",
+            "Mr."
+          ],
+          "given": [
+            "Ben",
+            "Lamar"
+          ],
+          "suffix": [
+            "Jr.",
+            "Gn"
+          ]
+        }
+      ]
+    },
+    {
+      "resourceType": "Organization",
+      "id": "tb1f165f-529f-4c0b-a673-b056501d6c60",
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NOI",
+                "display": "National Organization Identifier"
+              }
+            ],
+            "text": "HPI-O"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+          "value": "8003621566684455"
+        }
+      ],
+      "name": "Good Health Clinic"
+    },
+    {
+      "resourceType": "Practitioner",
+      "id": "db1f165f-529f-4c0b-a673-b056501d6c60",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/practitioner-classification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.13.62",
+                "code": "253312",
+                "display": "Cardiologist"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/practitioner-organization",
+          "valueReference": {
+            "reference": "#tb1f165f-529f-4c0b-a673-b056501d6c60"
+          }
+        }
+      ],
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NPI",
+                "display": "National provider identifier"
+              }
+            ],
+            "text": "HPI-I"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+          "value": "8003621566687777"
+        }
+      ],
+      "name": [
+        {
+          "family": "Markson",
+          "prefix": [
+            "Dr.",
+            "Mrs."
+          ],
+          "given": [
+            "Graham",
+            "Kyle"
+          ],
+          "suffix": [
+            "Jr.",
+            "Ph.D."
+          ]
+        },
+        {
+          "family": "Underwood",
+          "prefix": [
+            "Dr.",
+            "Miss."
+          ],
+          "given": [
+            "Christine",
+            "Kylie"
+          ],
+          "suffix": [
+            "CPA",
+            "Ph.D."
+          ]
+        }
+      ]
+    },
+    {
+      "resourceType": "ReferralRequest",
+      "id": "c90e98bd-9a90-41c1-afe6-d42787d1188d",
+      "status": "active",
+      "intent": "order",
+      "subject": {
+        "identifier":
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0203",
+                "code": "NI",
+                "display": "National unique individual identifier"
+              }
+            ],
+            "text": "IHI"
+          },
+          "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+          "value": "$patient_id"
+        }
+      },
+      "requester": {
+        "agent": {
+          "reference": "#6dcd1495-1c52-4801-9b05-fb3643410dc4"
+        }
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "$doc_id"
+    }
+  ],
+  "subType": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "100.16644",
+          "display": "Medicare/DVA Benefits Report"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "identifier":[
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "NI",
+            "display": "National unique individual identifier"
+          }
+        ],
+        "text": "IHI"
+      },
+      "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+      "value": "$patient_id"
+    }
+    ]
+  },
+  "created": "2017-06-06T10:12:32+10:00",
+  "provider": {
+    "reference": "#db1f165f-529f-4c0b-a673-b056501d6c60"
+  },
+  "referral": {
+    "reference": "#c90e98bd-9a90-41c1-afe6-d42787d1188d"
+  },
+  "item": [
+    {
+      "sequence": 1,
+      "service": {
+        "coding": [
+          {
+            "system": "http://ns.electronichealth.net.au/fhir/StructureDefinition/eob-item-service",
+            "code": "MBS",
+            "display": "Medicare Benefits Schedule"
+          }
+        ]
+      },
+      "modifier": [
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.36.1.2001.1005.21",
+              "code": "11709",
+              "display": "Australian MBS Code"
+            }
+          ]
+        }
+      ],
+      "servicedDate": "2017-06-06",
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/service-place",
+            "code": "21",
+            "display": "Inpatient Hospital"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "resourceType": "Consent",
+  "id": "$doc_id",
+  "extension": [
+    {
+      "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/consent-donation-decision",
+      "valueBoolean": true
+    }
+  ],
+  "status": "active",
+  "patient": {
+    "reference": "Patient/f6993a00-695e-46da-b990-a18734fccf43"
+  },
+  "provider": {
+    "reference": "#db1f165f-529f-4c0b-a673-b056501d6c60"
+  },
+  "purpose": [
+    {
+      "system": "urn:oid:1.2.36.1.2001.1001.101",
+      "code": "102.16652",
+      "display": "Australian Organ Donor Register Entry"
+    }
+  ],
+  "except": [
+    {
+      "type": "permit",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16661",
+          "display": "Bone Tissue Indicator"
+        }
+      ]
+    },
+    {
+      "type": "deny",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16662",
+          "display": "Eye Tissue Indicator"
+        }
+      ]
+    },
+    {
+      "type": "permit",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16663",
+          "display": "Heart Indicator"
+        }
+      ]
+    },
+    {
+      "type": "permit",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16664",
+          "display": "Heart Valve Indicator"
+        }
+      ]
+    },
+    {
+      "type": "permit",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16665",
+          "display": "Kidney Indicator"
+        }
+      ]
+    },
+    {
+      "type": "permit",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16666",
+          "display": "Liver Indicator"
+        }
+      ]
+    },
+    {
+      "type": "deny",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16667",
+          "display": "Lungs Indicator"
+        }
+      ]
+    },
+    {
+      "type": "permit",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16668",
+          "display": "Pancreas Indicator"
+        }
+      ]
+    },
+    {
+      "type": "permit",
+      "purpose": [
+        {
+          "system": "urn:oid:1.2.36.1.2001.1001.101",
+          "code": "103.16669",
+          "display": "Skin Tissue Indicator"
+        }
+      ]
+    }
+  ]
+}

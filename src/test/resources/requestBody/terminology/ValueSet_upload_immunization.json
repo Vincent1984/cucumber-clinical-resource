@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-used-by-upload-immunization",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.36.1.2001.1005.17",
+        "concept": [
+          {
+            "code": "IFXB",
+            "display": "Infanrix-Hep B"
+          }
+        ]
+      }
+    ]
+  }
+}

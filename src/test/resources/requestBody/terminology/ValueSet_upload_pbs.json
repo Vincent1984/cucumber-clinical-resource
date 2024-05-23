@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+//  "id": "valueset-used-by-upload-pbs",
+  "id": "australian-pbs-item-0",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.36.1.2001.1001.101_url",
+        "concept": [
+          {
+            "code": "100.16650",
+            "display": "Pharmaceutical Benefit Item"
+          }
+        ]
+      }
+//      {
+//        "system": "http://pbs.gov.au/code/manufacturer",
+//        "concept": [
+//          {
+//            "code": "AB",
+//            "display": "Pfizer Australia Pty Ltd"
+//          }
+//        ]
+//      },
+//      {
+//        "system": "http://pbs.gov.au/code/item",
+//        "concept": [
+//          {
+//            "code": "08215J",
+//            "display": "ATORVASTATIN"
+//          }
+//        ]
+//      }
+    ]
+  }
+}
